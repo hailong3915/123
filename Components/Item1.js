@@ -14,6 +14,7 @@ export default function CategoryListItem(props) {
         <View style={styles.container}>
             <Image style={styles.imageStyle} source={{ uri: product.images[0].url }} />
             <Text>{product.name}</Text>
+            <Image style={styles.imageStyle} source={{ uri: product.images[0].url }} />
             <View style={styles.priceRow}>
                 <Text style={styles.price}>{product.price}</Text>
                 <TouchableOpacity>
