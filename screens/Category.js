@@ -16,11 +16,16 @@ export default class Category extends React.Component {
             products: [
                 {
                     id: 1,
-                    images: [{ url: 'https://drive.google.com/file/d/1RA_P4zne05S2HxzhXSF6vTPLaOOyECos/view' }],
+                    images: [{ url: 'https://res.cloudinary.com/dsg1yo23i/image/upload/v1634550657/sample.jpg' }],
                     name: 'Diot 1',
                     price: 5000
                 },
-                { id: 2, name: 'Diot 2', price: 5000 }
+                {
+                    id: 2,
+                    name: 'Diot 2',
+                    images: [{ url: '' }],
+                    price: 5000
+                }
             ]
         };
     }

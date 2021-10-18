@@ -12,7 +12,7 @@ export default function CategoryListItem(props) {
     const { product } = props;
     return (
         <View style={styles.container}>
-
+            <Image style={styles.imageStyle} source={{ uri: product.images[0].url }} />
             <Text>{product.name}</Text>
             <View style={styles.priceRow}>
                 <Text style={styles.price}>{product.price}</Text>
