@@ -7,18 +7,17 @@ import AppNavigator from './AppNavigator';
 import Tabs from "./Components/tabs";
 
 
+
 const App1 = () => {
   return (
     <NavigationContainer>
-      <AppNavigator />
+      < AppNavigator />
     </NavigationContainer>
 
   );
 }
 
 export default App1;
-
-
 
 
 const styles = StyleSheet.create({

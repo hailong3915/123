@@ -6,9 +6,9 @@ import {
     TouchableOpacity,
     TextInput,
     Alert,
-    StyleSheet
+    StyleSheet,
+    ScrollView
 } from "react-native";
-import { Constants } from 'expo';
 import { StatusBar } from "expo-status-bar";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { Formik } from "formik";
@@ -30,7 +30,7 @@ export default function RegisterForm() {
     }
 
     return (
-        <>
+        <ScrollView>
             <SafeAreaView style={styles.topSafeArea} />
 
             <StatusBar style="light" />
@@ -142,7 +142,7 @@ export default function RegisterForm() {
                     </Formik>
                 </KeyboardAwareScrollView>
             </SafeAreaView>
-        </>
+        </ScrollView>
     );
 }
 
