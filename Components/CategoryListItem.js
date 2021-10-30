@@ -17,7 +17,7 @@ export default function CategoryListItem(props) {
             onPress={onPress}
         >
             <View style={styles.container}>
-                <Image style={styles.transistorImage} source={transistor} />
+                <Image style={styles.transistorImage} source={{ uri: category.images[0].url }} />
                 <Text style={styles.textButton}>{category.name}</Text>
             </View>
         </TouchableOpacity>
@@ -38,8 +38,8 @@ const styles = StyleSheet.create({
         marginBottom: 16
     },
     transistorImage: {
-        width: 60,
-        height: 64
+        width: 50,
+        height: 54
     },
     textButton: {
         fontSize: 25,

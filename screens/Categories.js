@@ -14,10 +14,42 @@ export default class Categories extends React.Component {
         super(props);
         this.state = {
             categories: [
-                { id: 1, name: 'Linh kiện bán dẫn' },
-                { id: 2, name: 'Linh kiện thụ động' },
-                { id: 3, name: 'Vi điều khiển - Kit phát triển' },
-                { id: 4, name: 'Cảm biến' },
+                {
+                    id: 1,
+                    name: 'Linh kiện bán dẫn',
+                    images: [
+                        {
+                            url: 'https://res.cloudinary.com/dsg1yo23i/image/upload/v1635606099/transistor_qb62ew.png'
+                        }
+                    ],
+                },
+                {
+                    id: 2,
+                    name: 'Linh kiện thụ động',
+                    images: [
+                        {
+                            url: 'https://res.cloudinary.com/dsg1yo23i/image/upload/v1635606099/wire_fkpr2z.png'
+                        }
+                    ],
+                },
+                {
+                    id: 3,
+                    name: 'Vi điều khiển - Kit ',
+                    images: [
+                        {
+                            url: 'https://res.cloudinary.com/dsg1yo23i/image/upload/v1635606099/processor_1_zynflc.png'
+                        }
+                    ],
+                },
+                {
+                    id: 4,
+                    name: 'Cảm biến',
+                    images: [
+                        {
+                            url: 'https://res.cloudinary.com/dsg1yo23i/image/upload/v1635606371/motion-sensor_1_z70687.png'
+                        }
+                    ],
+                },
             ]
         };
     }

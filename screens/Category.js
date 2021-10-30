@@ -8,7 +8,6 @@ import { StatusBar } from "expo-status-bar";
 import SearchBar from "../Components/SearchBar";
 import Item1 from "../Components/Item1"
 
-
 export default class Category extends React.Component {
     constructor(props) {
         super(props);
@@ -16,14 +15,18 @@ export default class Category extends React.Component {
             products: [
                 {
                     id: 1,
-                    images: [{ url: 'https://res.cloudinary.com/dsg1yo23i/image/upload/v1634550657/sample.jpg' }],
+                    images: [
+                        {
+                            url: 'https://res.cloudinary.com/dsg1yo23i/image/upload/v1634550657/sample.jpg'
+                        }
+                    ],
                     name: 'Diot 1',
                     price: 5000
                 },
                 {
                     id: 2,
                     name: 'Diot 2',
-                    images: [{ url: '' }],
+                    images: [{ url: 'https://cdn.pixabay.com/photo/2021/01/01/21/31/halloween-5880068__340.jpg' }],
                     price: 5000
                 }
             ]
@@ -31,6 +34,7 @@ export default class Category extends React.Component {
     }
 
     render() {
+        const { navigation } = this.props;
         return (
             <View style={styles.container}>
                 <StatusBar style='dark' />

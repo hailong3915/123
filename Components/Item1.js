@@ -1,17 +1,21 @@
 import React from "react";
 import {
-    Image,
     View,
     Text,
     StyleSheet,
+    Image,
     TouchableOpacity
 } from "react-native";
+import transistor from "../assets/transistor3.png"
 import cart from '../assets/shopping-cart.png'
 
 export default function CategoryListItem(props) {
     const { product } = props;
     return (
         <View style={styles.container}>
+            <Image style={styles.img}
+                source={{ uri: product.images[0].url }}
+            />
             <Text>{product.name}</Text>
             <View style={styles.priceRow}>
                 <Text style={styles.price}>{product.price}</Text>
@@ -50,5 +54,10 @@ const styles = StyleSheet.create({
     },
     price: {
         flex: 1,
+    },
+    img: {
+        height: 150,
+        borderTopLeftRadius: 4,
+        borderBottomLeftRadius: 4
     }
 });

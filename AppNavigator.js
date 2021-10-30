@@ -19,21 +19,9 @@ const App = ({ navigation }) => {
     </AppNavigator.Navigator>
   );
 }
-export { App };
+export default App;
 
-const Tab = createBottomTabNavigator();
 
-const Tabs = () => {
-  return (
-    <Tab.Navigator>
-      <Tab.Screen name='Home' component={Category, Categories} />
-      <Tab.Screen name='Cart' component={cartScreen} />
-      <Tab.Screen name='User' component={userScreen} />
-    </Tab.Navigator>
-  );
-}
-
-export default Tabs;
 
 
 
