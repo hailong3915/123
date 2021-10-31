@@ -6,7 +6,6 @@ import {
     StyleSheet,
     TouchableOpacity
 } from "react-native";
-import transistor from "../assets/transistor3.png"
 
 
 export default function CategoryListItem(props) {

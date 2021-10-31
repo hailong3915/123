@@ -9,6 +9,7 @@ import SearchBar from "../Components/SearchBar";
 import Item1 from "../Components/Item1"
 
 export default class Category extends React.Component {
+
     constructor(props) {
         super(props);
         this.state = {
@@ -17,16 +18,16 @@ export default class Category extends React.Component {
                     id: 1,
                     images: [
                         {
-                            url: 'https://res.cloudinary.com/dsg1yo23i/image/upload/v1634550657/sample.jpg'
+                            url: 'https://res.cloudinary.com/dsg1yo23i/image/upload/v1635670942/Linh%20ki%E1%BB%87n%20th%E1%BB%A5%20%C4%91%C3%B4ng/diode-chinh-luu-10a10-10a-1000v-1_q0ewsv.jpg'
                         }
                     ],
-                    name: 'Diot 1',
+                    name: 'Diode Chỉnh Lưu 10A10',
                     price: 5000
                 },
                 {
                     id: 2,
-                    name: 'Diot 2',
-                    images: [{ url: 'https://cdn.pixabay.com/photo/2021/01/01/21/31/halloween-5880068__340.jpg' }],
+                    name: 'Diode Chỉnh Lưu 1.5A 1000V',
+                    images: [{ url: 'https://res.cloudinary.com/dsg1yo23i/image/upload/v1635671164/Linh%20ki%E1%BB%87n%20th%E1%BB%A5%20%C4%91%C3%B4ng/diot2_zlwptc.png' }],
                     price: 5000
                 }
             ]
@@ -34,7 +35,6 @@ export default class Category extends React.Component {
     }
 
     render() {
-        const { navigation } = this.props;
         return (
             <View style={styles.container}>
                 <StatusBar style='dark' />
@@ -55,8 +55,8 @@ export default class Category extends React.Component {
 }
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        backgroundColor: `#f0f8ff`,
+        paddingHorizontal: 3,
+        backgroundColor: `#f0f8ff`
     },
     wrapper: {
         flex: 1,

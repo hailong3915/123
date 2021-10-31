@@ -65,11 +65,13 @@ export default class Categories extends React.Component {
                 <SearchBar />
                 <FlatList
                     data={categories}
-                    renderItem={({ item }) => <CategoryListItem category={item}
+                    renderItem={({ item }) => (<CategoryListItem category={item}
                         onPress={() => navigation.navigate('Category', {
                             categoryName: item.name
-                        })}
-                    />}
+                        })
+                        }
+                    />
+                    )}
                     keyExtractor={item => `${item.id}`}
                     contentContainerStyle={{
                         paddingLeft: 16,
