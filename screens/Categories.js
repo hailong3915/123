@@ -16,25 +16,17 @@ export default class Categories extends React.Component {
             categories: [
                 {
                     id: 1,
-                    name: 'Linh kiện bán dẫn',
+                    name: 'Linh kiện điện tử',
                     images: [
                         {
                             url: 'https://res.cloudinary.com/dsg1yo23i/image/upload/v1635606099/transistor_qb62ew.png'
                         }
                     ],
                 },
+
                 {
                     id: 2,
-                    name: 'Linh kiện thụ động',
-                    images: [
-                        {
-                            url: 'https://res.cloudinary.com/dsg1yo23i/image/upload/v1635606099/wire_fkpr2z.png'
-                        }
-                    ],
-                },
-                {
-                    id: 3,
-                    name: 'Vi điều khiển - Kit ',
+                    name: 'Vi điều khiển - Nhúng ',
                     images: [
                         {
                             url: 'https://res.cloudinary.com/dsg1yo23i/image/upload/v1635606099/processor_1_zynflc.png'
@@ -42,7 +34,7 @@ export default class Categories extends React.Component {
                     ],
                 },
                 {
-                    id: 4,
+                    id: 3,
                     name: 'Cảm biến',
                     images: [
                         {
